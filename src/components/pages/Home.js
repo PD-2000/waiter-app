@@ -1,18 +1,12 @@
-import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import AllTables from "../features/AllTables";
 
-const Home = props => {
+const Home = () => {
 	return (
 		<div>
-			<h1>All tables</h1>
 			<div className="d-flex justify-content-between">
-				<div className="table">
-					<p className="fs-2">Table 1 <span className="fs-5"><b>Status: </b>Busy</span></p>
-				</div>
-				<Link key={props.id} to={"/table/:id"}>
-					<Button variant="outline-info">View table</Button>
-				</Link>
+				<h1>All Tables</h1>
 			</div>
+			<AllTables />
 		</div>
 	);
 };
